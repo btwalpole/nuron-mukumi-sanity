@@ -1,8 +1,8 @@
 import {defineField, defineType} from 'sanity'
 
-export const concertType = defineType({
-  name: 'concert',
-  title: 'Concert',
+export const articleType = defineType({
+  name: 'article',
+  title: 'Article',
   type: 'document',
   fields: [
     defineField({
@@ -21,24 +21,14 @@ export const concertType = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
-      name: 'venue',
+      name: 'location',
       type: 'text',
       validation: (rule) => rule.required(),
-    }),
-    defineField({
-      name: 'link',
-      type: 'url',
     }),
     defineField({
       name: 'quote',
       title: 'Quote',
       type: 'quote',
-    }),
-    defineField({
-      name: 'youtubeId',
-      title: 'YouTube Video ID',
-      type: 'string',
-      description: 'The ID of the YouTube video, e.g. dQw4w9WgXcQ',
-    }),
+    })
   ],
 })
