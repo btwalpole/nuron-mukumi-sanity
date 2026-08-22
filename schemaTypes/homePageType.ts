@@ -13,5 +13,12 @@ export const homePageType = defineType({
       to: [{ type: 'concert' }],
       validation: (Rule) => Rule.required(),
     }),
+    defineField({
+      name: 'featuredAlbum',
+      title: 'Featured Album',
+      type: 'reference',
+      to: [{ type: 'album' }],
+      validation: (Rule) => Rule.required(),
+    }),
   ],
 })
