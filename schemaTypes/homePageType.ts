@@ -20,5 +20,16 @@ export const homePageType = defineType({
       to: [{ type: 'album' }],
       validation: (Rule) => Rule.required(),
     }),
+    defineField({
+      name: 'featuredQuote',
+      title: 'Featured Quote',
+      type: 'quote',
+    }),
+    defineField({
+      name: 'footerLinks',
+      title: 'Footer Links',
+      type: 'array',
+      of: [{ type: 'link' }],
+    })
   ],
 })
