@@ -5,5 +5,6 @@ import { quoteType } from './quoteType'
 import { homePageType } from './homePageType'
 import { albumType } from './albumType'
 import { linkType } from './linkType'
+import {biographyType} from './biographyType'
 
-export const schemaTypes = [postType, concertType, articleType, quoteType, homePageType, albumType, linkType]
+export const schemaTypes = [postType, concertType, articleType, quoteType, homePageType, albumType, linkType, biographyType]
