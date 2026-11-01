@@ -11,6 +11,11 @@ export const biographyType = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
+      name: 'teaser',
+      type: 'text',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
       name: 'body',
       title: 'Biography',
       type: 'array',
