@@ -23,7 +23,6 @@ export const articleType = defineType({
     defineField({
       name: 'location',
       type: 'text',
-      validation: (rule) => rule.required(),
     }),
     defineField({
       name: 'quote',
